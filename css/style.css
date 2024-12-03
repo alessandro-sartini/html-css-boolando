@@ -41,7 +41,7 @@ header{
 .container-80{
     margin: 0 auto;
     width: 80%;
-    padding-top: 50px;
+    padding: 50px;
    justify-content: space-around;
    flex-direction: column;
 }
@@ -129,4 +129,15 @@ span{
     color: black;
     font-weight: lighter;
     text-decoration: line-through;
+}
+.f-container{
+    margin: 0 auto;
+    width: 80%;
+    height: 80px; 
+    justify-content: space-between;
+    
+}
+.left-container{
+    flex-direction: row;
+
 }
