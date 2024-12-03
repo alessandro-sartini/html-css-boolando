@@ -1,0 +1,38 @@
+:root{
+
+  --orange-za: #FF6900; 
+  --back-za:#FFFFFF;
+  --green:#008000;
+  --re:#FF0000;
+
+}
+a{
+    color: var(--back-za);
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.h-container{
+    height: 60px;
+    justify-content: space-around;
+}
+header{
+    /* height: 60px; */
+    background-color: var(--orange-za);
+}
+
+.menu ul{
+    padding-top: 20px;
+    display: flex;
+    column-gap: 10px;
+
+}
+.img img {
+    max-width: 100px; 
+    height: auto;
+}
