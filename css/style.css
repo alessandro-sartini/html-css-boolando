@@ -45,24 +45,46 @@ header{
    justify-content: space-around;
    flex-direction: column;
 }
-.hero-container1{
-    height: 450px;
-    width: 300px;
+
+.hero-container:nth-child(1) {
+    background-image: url(../img/1.webp);
+
+}
+.hero-container:nth-child(2) {
+    background-image: url(../img/1.webp);
+
+}
+.hero-container:nth-child(3) {
+    background-image: url(../img/1.webp);
+
+}
+.hero-container:nth-child(4) {
+    background-image: url(../img/1.webp);
+
+}
+.hero-container:nth-child(5) {
+    background-image: url(../img/1.webp);
+
+}
+.hero-container:nth-child(6) {
+    background-image: url(../img/1.webp);
+
 }
 .hero-container{
-    background-image: url(../img/1.webp);
+    /* background-image: url(../img/1.webp); */
     height: 400px;
     width: 300px;
     background-size: cover;
     position: relative;
+    /* flex-direction: column; */
 }
+/* .hero-container:: */
 
 .ticket{
     height: 20px;
-    width: 40px;
-    /* position: absolute;
-    bottom: 20px;
-    left: 0; */
+    margin: 2px;
+    /* width: 40px; */
+   
     
 }
 .container-ticket{
@@ -70,24 +92,41 @@ header{
     position: absolute;
     bottom: 20px;
     left: 0;
-    gap: 5px;
+    /* gap: 5px; */
 }
 .red{
     background-color: #FF0000;  
+    color: white;
 }
 .green{
+    color: white;
     background-color: green;
 }
-.heart{
-    background-color: #FF6900;
+.heart {
+    background-color: white;
     position: absolute;
     right: 0px;
     top: 10px;
+    text-align: center;
+    padding: 5px;
+    align-items: center;
+    width: 30px; 
+    height: 30px; 
+}
+.heart :hover{
+    fill: #FF0000;
 }
 .container-info{
     flex-direction: column;
     width: 300px;
-    padding: 15px;
     text-align: left;
     
+}
+span{
+    color: #FF0000;
+}
+.barrato{
+    color: black;
+    font-weight: lighter;
+    text-decoration: line-through;
 }
