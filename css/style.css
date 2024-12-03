@@ -46,34 +46,52 @@ header{
    /* flex-direction: column; */
 }
 
-.hero-container:nth-child(1) {
+.hero-1{
     background-image: url(../img/1.webp);
-
 }
-.hero-container:nth-child(2) {
+.hero-1:hover{
+    background-image: url(../img/1b.webp);
+}
+.hero-2{
     background-image: url(../img/2.webp);
 
 }
-.hero-container:nth-child(3) {
+.hero-2:hover{
+    background-image: url(../img/2b.webp);
+}
+.hero-3 {
     background-image: url(../img/3.webp);
 
 }
-.hero-container:nth-child(4) {
-    background-image: url(../img/1.webp);
+.hero-3:hover{
+    background-image: url(../img/3b.webp);
+}
+.hero-4 {
+    background-image: url(../img/4.webp);
 
 }
-.hero-container:nth-child(5) {
-    background-image: url(../img/1.webp);
+.hero-4:hover{
+    background-image: url(../img/4b.webp);
+}
+.hero-5 {
+    background-image: url(../img/5.webp);
 
 }
-.hero-container:nth-child(6) {
-    background-image: url(../img/1.webp);
+.hero-5:hover{
+    background-image: url(../img/5b.webp);
+}
+.hero-6 {
+    background-image: url(../img/6.webp);
 
+}
+.hero-6:hover{
+    background-image: url(../img/6b.webp);
 }
 .hero-container{
     /* background-image: url(../img/1.webp); */
-    height: 600px;
-    width: 400px;
+    height: 700px;
+    width: 500px;
+    /* width: calc(33.33% - 20px); */
     background-size: cover;
     position: relative;
     /* flex-direction: column; */
