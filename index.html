@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>booleando</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- debug css -->
-    <!-- <link rel="stylesheet" href="./css/debug.css"> -->
+    <link rel="stylesheet" href="./css/debug.css">
     <!-- reset css -->
     <link rel="stylesheet" href="./css/reset.css">
     <!-- style css -->
@@ -33,9 +35,9 @@
             </figure>
             <nav class="menu">
                 <ul>
-                    <li><a href="">&#128100;</a></li>
-                    <li><a href="">&hearts;</a></li>
-                    <li><a href="">&#128717;</a></li>
+                    <li><a href=""><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
                     
                 </ul>
              </nav>
@@ -49,15 +51,22 @@
             
             
             <div class="card">
-                
-                <div class="hero-container hero-1">
-                        
+                <!--! metodo corretto per fare hover non funziona boh comunque la dinamica e questa !!! -->
+                <div class="hero-container ">
+                       <figure>
+                        <img class="visible" src="./img/1.webp" alt="">
+                        <img class="ghost none" src="./img/1.webp" alt="">
+
+                       </figure> 
                     <div class="flex container-ticket">
                         <spna class="ticket red">-50%</spna>
-                        <spna class="ticket green">Sostenibilita</spna>
+                        <spna class="ticket green ">Sostenibilita</spna>
                     </div>
-                    
-                    <img class="ticket heart flex" src="./img/heart-solid.svg" alt="" >
+
+                    <div class="ticket heart flex">
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
     
                   
                 </div>
@@ -78,12 +87,13 @@
                         
                     <div class="flex container-ticket">
                         <spna class="ticket red">-50%</spna>
-                        <spna class="ticket green">Sostenibilita</spna>
+                        <spna class="ticket green none">Sostenibilita</spna>
                     </div>
-                    
-                    <img src="./img/heart-solid.svg" alt="" class=" heart flex">
-    
-                  
+                    <div class="ticket heart flex">
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
                 </div>
                 <div class="flex container-info">
                     <span>Levi's</span>
@@ -101,11 +111,13 @@
                         
                     <div class="flex container-ticket">
                         <spna class="ticket red">-50%</spna>
-                        <spna class="ticket green">Sostenibilita</spna>
+                        <spna class="ticket green none">Sostenibilita</spna>
                     </div>
-                    
-                    <img src="./img/heart-solid.svg" alt="" class="ticket heart flex">
-    
+                    <div class="ticket heart flex">
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
                   
                 </div>
                 <div class="flex container-info">
@@ -127,7 +139,10 @@
                         <spna class="ticket green">Sostenibilita</spna>
                     </div>
                     
-                    <img src="./img/heart-solid.svg" alt="" class="ticket heart flex">
+                    <div class="ticket heart flex">
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
     
                   
                 </div>
@@ -145,11 +160,14 @@
                 <div class="hero-container hero-5">
                         
                     <div class="flex container-ticket">
-                        <spna class="ticket red">-50%</spna>
-                        <spna class="ticket green">Sostenibilita</spna>
+                        <spna class="ticket red none">-50%</spna>
+                        <spna class="ticket green none">Sostenibilita</spna>
                     </div>
                     
-                    <img src="./img/heart-solid.svg" alt="" class="ticket heart flex">
+                    <div class="ticket heart flex">
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
     
                   
                 </div>
@@ -167,11 +185,14 @@
                 <div class="hero-container hero-6">
                         
                     <div class="flex container-ticket">
-                        <spna class="ticket red">-50%</spna>
+                        <spna class="ticket red none">-50%</spna>
                         <spna class="ticket green">Sostenibilita</spna>
                     </div>
                     
-                    <img src="./img/heart-solid.svg" alt="" class="ticket heart flex">
+                    <div class="ticket heart flex">
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
     
                   
                 </div>
@@ -190,114 +211,6 @@
 
            
             
-            <!-- <div class="hero-container">
-                    
-                <div class="flex container-ticket">
-                    <spna class="ticket red">-50%</spna>
-                    <spna class="ticket green">Sostenibilita</spna>
-                </div>
-                
-                <img src="./img/heart-solid.svg" alt="" class="ticket heart flex">
-
-              
-            </div>
-            <div class="flex container-info">
-                <span>Levi's</span>
-                <h4>RELAXED FIT TEE UNISEX</h4>
-                <span>14,99$ <span class="barrato">29,99$</span></span>
-            </div>
-
-            
-            <div class="hero-container">
-                    
-                <div class="flex container-ticket">
-                    <spna class="ticket red">-50%</spna>
-                    <spna class="ticket green">Sostenibilita</spna>
-                </div>
-                
-                <img src="./img/heart-solid.svg" alt="" class="ticket heart flex">
-
-              
-            </div>
-            <div class="flex container-info">
-                <span>Levi's</span>
-                <h4>RELAXED FIT TEE UNISEX</h4>
-                <span>14,99$ <span class="barrato">29,99$</span></span>
-            </div>
-
-            
-            <div class="hero-container">
-                    
-                <div class="flex container-ticket">
-                    <spna class="ticket red">-50%</spna>
-                    <spna class="ticket green">Sostenibilita</spna>
-                </div>
-                
-                <img src="./img/heart-solid.svg" alt="" class="ticket heart flex">
-
-              
-            </div>
-            <div class="flex container-info">
-                <span>Levi's</span>
-                <h4>RELAXED FIT TEE UNISEX</h4>
-                <span>14,99$ <span class="barrato">29,99$</span></span>
-            </div>
-
-            
-            <div class="hero-container">
-                    
-                <div class="flex container-ticket">
-                    <spna class="ticket red">-50%</spna>
-                    <spna class="ticket green">Sostenibilita</spna>
-                </div>
-                
-                <img src="./img/heart-solid.svg" alt="" class="ticket heart flex">
-
-              
-            </div>
-            <div class="flex container-info">
-                <span>Levi's</span>
-                <h4>RELAXED FIT TEE UNISEX</h4>
-                <span>14,99$ <span class="barrato">29,99$</span></span>
-            </div>
-
-            
-            <div class="hero-container">
-                    
-                <div class="flex container-ticket">
-                    <spna class="ticket red">-50%</spna>
-                    <spna class="ticket green">Sostenibilita</spna>
-                </div>
-                
-                <img src="./img/heart-solid.svg" alt="" class="ticket heart flex">
-
-              
-            </div>
-            <div class="flex container-info">
-                <span>Levi's</span>
-                <h4>RELAXED FIT TEE UNISEX</h4>
-                <span>14,99$ <span class="barrato">29,99$</span></span>
-            </div>
-
-            
-            <div class="hero-container">
-                    
-                <div class="flex container-ticket">
-                    <spna class="ticket red">-50%</spna>
-                    <spna class="ticket green">Sostenibilita</spna>
-                </div>
-                
-                <img src="./img/heart-solid.svg" alt="" class="ticket heart flex">
-
-              
-            </div>
-            <div class="flex container-info">
-                <span>Levi's</span>
-                <h4>RELAXED FIT TEE UNISEX</h4>
-                <span>14,99$ <span class="barrato">29,99$</span></span>
-            </div> -->
-
-
             
 
         </div>
@@ -321,13 +234,13 @@
                 </div>
                 <div class=" menu">
 
-                    <h4>Booleand s.r.l.</h4>
                     <ul class="flex left-container">
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
+                        <h4>Booleand s.r.l.</h4>
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                        
                     </ul>
 
                 </div>

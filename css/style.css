@@ -6,6 +6,9 @@
   --re:#FF0000;
 
 }
+.none{
+    display: none;
+}
 a{
     color: var(--back-za);
 }
@@ -40,10 +43,21 @@ header{
 }
 .container-80{
     margin: 0 auto;
-    width: 80%;
+    max-width: 80%;
     padding: 50px;
-   justify-content: space-around;
+    justify-content: space-around;
    /* flex-direction: column; */
+}
+
+figure:hover.visible{
+    cursor: pointer;
+    display: none;
+
+}
+figure:hover.ghost{
+    cursor: pointer;
+    display: block;
+
 }
 
 .hero-1{
@@ -131,8 +145,8 @@ header{
     width: 30px; 
     height: 30px; 
 }
-svg:hover{
-   fill: red;
+.heart>i:hover{
+    color: #FF0000;
 }
 .container-info{
     flex-direction: column;
@@ -149,6 +163,7 @@ span{
     text-decoration: line-through;
 }
 .f-container{
+    color: #FFFFFF;
     margin: 0 auto;
    padding-inline: 15%;
     height: 80px; 
@@ -167,8 +182,12 @@ span{
 }
 
 .card{
+    flex-basis: calc(100% / 3 - 50px);
     padding-bottom: 50px;
-    width: 500px;
+    /* width: 500px; */
+}
+.card img{
+    width: 100%;
 }
 h3{
     text-align: left;
